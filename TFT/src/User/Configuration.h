@@ -34,7 +34,7 @@
  *
  * Options: [2400: 0, 9600: 1, 19200: 2, 38400: 3, 57600: 4, 115200: 5, 250000: 6, 500000: 7, 1000000: 8]
  */
-#define BAUDRATE 5  // Default: 5
+#define BAUDRATE 6  // Default: 5
 
 /**
  * Default Primary Language (for Touch-Mode only)
@@ -190,9 +190,9 @@
 #define X_MIN_POS   0
 #define Y_MIN_POS   0
 #define Z_MIN_POS   0
-#define X_MAX_POS 235
-#define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define X_MAX_POS 300
+#define Y_MAX_POS 300
+#define Z_MAX_POS 400
 
 /**
  * Raised Z height for probing
@@ -491,7 +491,7 @@
 
 // Smart filament runout detection
 // For use with an encoder disc that toggles runout pin as filament moves.
-#define FILAMENT_RUNOUT_DISTANCE_MM 7
+#define FILAMENT_RUNOUT_DISTANCE_MM 10
 
 //
 // Power Loss Recovery
