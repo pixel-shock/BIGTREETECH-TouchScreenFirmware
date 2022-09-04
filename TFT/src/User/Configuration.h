@@ -419,7 +419,7 @@
  * firmware supports controller fan (M710).
  *   Options: [disable: 0, enable: 1]
  */
-#define CONTROLLER_FAN 0  // Default: 0
+#define CONTROLLER_FAN 1  // Default: 0
 
 /**
  * Bed / Extruder / Chamber Maximum Temperatures
@@ -463,9 +463,9 @@
 #define X_MIN_POS   0  // Default: 0
 #define Y_MIN_POS   0  // Default: 0
 #define Z_MIN_POS   0  // Default: 0
-#define X_MAX_POS 235  // Default: 235
-#define Y_MAX_POS 235  // Default: 235
-#define Z_MAX_POS 250  // Default: 250
+#define X_MAX_POS 300  // Default: 235
+#define Y_MAX_POS 300  // Default: 235
+#define Z_MAX_POS 400  // Default: 250
 
 /**
  * X & Y Move Speeds/Feedrates
@@ -946,7 +946,7 @@
  * If enabled, when the LCD is idle (dimmed) then the knob LED will be also switched off.
  *   Options: [disable: 0, enable: 1]
  */
-#define KNOB_LED_IDLE 1  // Default: 1
+#define KNOB_LED_IDLE 0  // Default: 1
 
 /**
  * Knob LED Pixels (only for TFT28/TFT35_E3/TFT43/TFT50/TFT70 V3.0)
@@ -989,16 +989,16 @@
 #define CUSTOM_GCODE_5 "M501\n"
 #define CUSTOM_LABEL_6 "EEPROM Defaults"
 #define CUSTOM_GCODE_6 "M502\n"
-//#define CUSTOM_LABEL_7 "Custom7"
-//#define CUSTOM_GCODE_7 "M105\n"
-//#define CUSTOM_LABEL_8 "Custom8"
-//#define CUSTOM_GCODE_8 "M105\n"
-//#define CUSTOM_LABEL_9 "Custom9"
-//#define CUSTOM_GCODE_9 "M105\n"
-//#define CUSTOM_LABEL_10 "Custom10"
-//#define CUSTOM_GCODE_10 "M105\n"
-//#define CUSTOM_LABEL_11 "Custom11"
-//#define CUSTOM_GCODE_11 "M105\n"
+#define CUSTOM_LABEL_7 "P1 - Left Bottom Corner"
+#define CUSTOM_GCODE_7 "G0 Z10\nG0 F5000 X45 Y60 Z0\nG0 Z0\n"
+#define CUSTOM_LABEL_8 "P2 - Left Top Corner"
+#define CUSTOM_GCODE_8 "G0 Z10\nG0 F5000 X45 Y300 Z0\nG0 Z0\n"
+#define CUSTOM_LABEL_9 "P3 - Right Top Corner"
+#define CUSTOM_GCODE_9 "G0 Z10\nG0 F5000 X290 Y300 Z0\nG0 Z0\n"
+#define CUSTOM_LABEL_10 "P4 - Right Bottom Corner"
+#define CUSTOM_GCODE_10 "G0 Z10\nG0 F5000 X290 Y60 Z0\nG0 Z0\n"
+#define CUSTOM_LABEL_11 "P5 - Center Center"
+#define CUSTOM_GCODE_11 "G0 Z10\nG0 F5000 X165 Y150 Z0\nG0 Z0\n"
 //#define CUSTOM_LABEL_12 "Custom12"
 //#define CUSTOM_GCODE_12 "M105\n"
 //#define CUSTOM_LABEL_13 "Custom13"
